@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeT-ev-fPH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recommend View Controller-->
+        <scene sceneID="QVO-Gm-4wp">
+            <objects>
+                <viewController id="LeT-ev-fPH" customClass="RecommendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQp-lw-6Mg"/>
+                        <viewControllerLayoutGuide type="bottom" id="eNI-dz-oWP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="klG-QV-ip7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-vj-bUz">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LeT-ev-fPH" id="FUB-3w-Dbj"/>
+                                </connections>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NI3-mr-hhr">
+                                <rect key="frame" x="0.0" y="20" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="49S-7V-HGl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="LeT-ev-fPH" id="Xes-ff-Csi"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NI3-mr-hhr" firstAttribute="top" secondItem="YQp-lw-6Mg" secondAttribute="bottom" id="6mL-jx-DVv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Abj-vj-bUz" secondAttribute="trailing" constant="-16" id="IAz-rd-4oN"/>
+                            <constraint firstItem="NI3-mr-hhr" firstAttribute="leading" secondItem="klG-QV-ip7" secondAttribute="leadingMargin" constant="-16" id="IN4-tg-XDA"/>
+                            <constraint firstItem="Abj-vj-bUz" firstAttribute="leading" secondItem="klG-QV-ip7" secondAttribute="leadingMargin" constant="-16" id="akL-Fg-pYp"/>
+                            <constraint firstItem="NI3-mr-hhr" firstAttribute="bottom" secondItem="Abj-vj-bUz" secondAttribute="top" id="mmJ-kf-G7i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NI3-mr-hhr" secondAttribute="trailing" constant="-16" id="qRB-rc-pBB"/>
+                            <constraint firstItem="eNI-dz-oWP" firstAttribute="top" secondItem="Abj-vj-bUz" secondAttribute="bottom" id="vOC-Fl-X1n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomScrollView" destination="Abj-vj-bUz" id="Tg7-jh-rCx"/>
+                        <outlet property="topScrollView" destination="NI3-mr-hhr" id="hqm-bq-gah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3V3-7P-BqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="160"/>
+        </scene>
+    </scenes>
+</document>

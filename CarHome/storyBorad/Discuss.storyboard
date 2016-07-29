@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="km5-HE-eIi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discuss View Controller-->
+        <scene sceneID="C2z-R1-KLv">
+            <objects>
+                <viewController id="km5-HE-eIi" customClass="DiscussViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="opA-qa-qvR"/>
+                        <viewControllerLayoutGuide type="bottom" id="1WB-5Z-NjN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqq-rG-Gdw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmn-27-JZl">
+                                <rect key="frame" x="4" y="20" width="592" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10i-g8-4lB">
+                                        <rect key="frame" x="105" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="oJN-Qp-3eD"/>
+                                            <constraint firstAttribute="height" constant="40" id="x4p-nH-emd"/>
+                                        </constraints>
+                                        <state key="normal" title="热帖">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hotDiscussBtnClicked:" destination="km5-HE-eIi" eventType="touchUpInside" id="WsP-Wq-5dI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WS-lm-fXq">
+                                        <rect key="frame" x="165" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DTA-Qy-UFw"/>
+                                            <constraint firstAttribute="width" constant="80" id="b1d-AU-XP1"/>
+                                        </constraints>
+                                        <state key="normal" title="常用论坛">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="usualDiscussBtnClicked:" destination="km5-HE-eIi" eventType="touchUpInside" id="i91-lG-5DV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT1-rK-UJ8">
+                                        <rect key="frame" x="5" y="0.0" width="80" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dWc-1M-zoU"/>
+                                            <constraint firstAttribute="width" constant="80" id="wFc-ih-Oap"/>
+                                        </constraints>
+                                        <state key="normal" title="精选日报">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="jingXuan:" destination="km5-HE-eIi" eventType="touchUpInside" id="JSI-Ne-kgb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="10i-g8-4lB" firstAttribute="top" secondItem="rmn-27-JZl" secondAttribute="top" id="3LN-sa-vSf"/>
+                                    <constraint firstItem="JT1-rK-UJ8" firstAttribute="top" secondItem="rmn-27-JZl" secondAttribute="top" id="54y-vd-PmO"/>
+                                    <constraint firstAttribute="height" constant="40" id="Aap-kf-BjC"/>
+                                    <constraint firstItem="7WS-lm-fXq" firstAttribute="leading" secondItem="10i-g8-4lB" secondAttribute="trailing" constant="20" id="CMO-4D-akg"/>
+                                    <constraint firstItem="7WS-lm-fXq" firstAttribute="top" secondItem="rmn-27-JZl" secondAttribute="top" id="SMG-YX-JsK"/>
+                                    <constraint firstItem="JT1-rK-UJ8" firstAttribute="leading" secondItem="rmn-27-JZl" secondAttribute="leading" constant="5" id="fm3-tW-bQH"/>
+                                    <constraint firstItem="10i-g8-4lB" firstAttribute="leading" secondItem="JT1-rK-UJ8" secondAttribute="trailing" constant="20" id="siy-Kc-c4L"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDV-7j-fkh">
+                                <rect key="frame" x="9" y="60" width="80" height="2"/>
+                                <color key="backgroundColor" red="0.26543531225327754" green="0.52840258529054784" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NsX-FK-vCc"/>
+                                    <constraint firstAttribute="height" constant="2" id="vmZ-dy-JXa"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP2-n8-w7N">
+                                <rect key="frame" x="4" y="62" width="592" height="538"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rmn-27-JZl" secondAttribute="trailing" constant="-16" id="712-ab-eEA"/>
+                            <constraint firstItem="1WB-5Z-NjN" firstAttribute="top" secondItem="RP2-n8-w7N" secondAttribute="bottom" id="7ls-CQ-yKY"/>
+                            <constraint firstItem="rmn-27-JZl" firstAttribute="top" secondItem="opA-qa-qvR" secondAttribute="bottom" id="E8x-hS-ZFn"/>
+                            <constraint firstItem="BDV-7j-fkh" firstAttribute="top" secondItem="rmn-27-JZl" secondAttribute="bottom" id="ITd-Sl-8vG"/>
+                            <constraint firstItem="BDV-7j-fkh" firstAttribute="leading" secondItem="iqq-rG-Gdw" secondAttribute="leadingMargin" constant="-11" id="Lgr-DY-fN9"/>
+                            <constraint firstItem="RP2-n8-w7N" firstAttribute="leading" secondItem="iqq-rG-Gdw" secondAttribute="leadingMargin" constant="-16" id="MA7-oL-wXa"/>
+                            <constraint firstItem="BDV-7j-fkh" firstAttribute="bottom" secondItem="RP2-n8-w7N" secondAttribute="top" id="a8V-IZ-4uM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RP2-n8-w7N" secondAttribute="trailing" constant="-16" id="u2e-Nz-eDN"/>
+                            <constraint firstItem="rmn-27-JZl" firstAttribute="leading" secondItem="iqq-rG-Gdw" secondAttribute="leadingMargin" constant="-16" id="ujS-L6-Doa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hotDiscuss" destination="10i-g8-4lB" id="A7m-di-nKK"/>
+                        <outlet property="jingXuanBtn" destination="JT1-rK-UJ8" id="zJw-UR-ebO"/>
+                        <outlet property="moveLine" destination="BDV-7j-fkh" id="aez-Rb-vgb"/>
+                        <outlet property="moveScrollView" destination="RP2-n8-w7N" id="7sd-EQ-jJH"/>
+                        <outlet property="usualDiscuss" destination="7WS-lm-fXq" id="3Gz-QS-I26"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJw-4J-COA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="146"/>
+        </scene>
+    </scenes>
+</document>

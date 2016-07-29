@@ -1,0 +1,143 @@
+//
+//  CarHome.pch
+//  CarHome
+//
+//  Created by qianfeng on 15/10/15.
+//  Copyright (c) 2015年 qianfeng. All rights reserved.
+//
+
+#ifndef CarHome_CarHome_pch
+#define CarHome_CarHome_pch
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define URL_RECOMMEND @"http://app.api.autohome.com.cn/autov4.9.5/news/"
+/*
+ 首页最新参数
+ newslist-pm2-c0-nt0-p1-s30-l0.json
+ 上面参数中 l0 其中0为可变参数
+ 
+ 快报参数
+ fastnewslist-pm2-b0-l0-s20-lastid0.json
+ lastid0 0为可变参数
+ 
+ 视频参数
+ videolist-pm2-vt0-s20-lastid0.json
+ lastid0 0为可变参数
+ 
+ //新闻参数
+ newslist-pm2-c0-nt1-p1-s20-l0.json
+ l0 为可变参数
+ 
+ //评测参数
+ newslist-pm2-c0-nt3-p1-s20-l0.json
+ l0为可变参数
+ */
+
+#define URL_DISCUSS @"http://app.api.autohome.com.cn/autov4.9.5/Club/"
+#define HOT_PARA @"shotfoumlist-pm1-p1-s50.json"
+
+//热帖刷新参数
+#define URL_DISCUSS_UPDATE @"http://app.api.autohome.com.cn/autov4.9.5/Club/shotfoumlist-pm1-p"
+#define URL_DICUSS_FIX_PARA @"-s50.json"
+
+/*
+//论坛参数
+ 热帖参数
+shotfoumlist-pm1-p1-s50.json
+ p1 p2 p3 为其刷新的可变参数
+ */
+
+#define URL_USUAL @"http://app.api.autohome.com.cn/autov4.9.5/club/"
+//车系参数
+#define URL_CAR_TYPE @"clubsseries-pm2-st635436819893664946.json"
+//地区参数
+#define URL_AREA @"clubsarea-pm2-st635063914300953573.json"
+//主题参数
+#define URL_THEME @"clubstheme-pm2-st635435459960905592.json"
+
+
+
+//车系论坛
+#define URL_BASE_CAR @"http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b"
+#define URL_CAR_FIX_PARA @"-btc-r0-ss0-o0-p"
+
+#define URL_UPDATE @"-s50-qf0.json"
+
+/*
+ http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b3862-btc-r0-ss0-o0-p1-s50-qf0.json
+ */
+
+//地区论团
+#define URL_BASE_AREA @"http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b"
+#define URL_AREA_FIX_PARA @"-bta-r0-ss0-o0-p"
+
+//主题内论坛参数
+#define URL_BASE_THEME @"http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b"
+#define URL_THEME_FIX_PARA @"-bto-r0-ss0-o0-p"
+//p1,p2,p3。。。为刷新页面参数
+
+//帖子详情
+
+#define URL_CLUB_DETAIL @"http://club.autohome.com.cn/bbs/mobile-c-"
+#define URL_CLUB_FIX_PARA @".html?v=3.1&pageSize=20&clientType=IOS&openlink=0&gprs=0"
+
+//club.autohome.com.cn/bbs/mobile-c- 100003- 46175805-1.html?v=3.1&pageSize=20&clientType=IOS&openlink=0&gprs=0
+
+
+/*
+ 常用论坛
+ 1.车系论坛
+ clubsseries-pm2-st635436819893664946.json
+ 2.地区论坛
+ http://app.api.autohome.com.cn/autov4.9.5/club/clubsarea-pm2-st635063914300953573.json
+    帖子接口；
+ http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b100002-bta-r0-ss0-o0-p1-s50-qf0.json
+    帖子内容接口：
+ 
+ 3。主题论坛
+ http://app.api.autohome.com.cn/autov4.9.5/club/clubstheme-pm2-st635435459960905592.json
+ 主题内接口
+ http://app.api.autohome.com.cn/autov4.9.5/club/topics-pm2-b200009-bto-r0-ss0-o0-p1-s50-qf0.json
+ 其中b200009为可变参数
+ */
+
+
+#define URL_JINGHUA @"http://app.api.autohome.com.cn/autov4.9.5/club/jingxuantopic-pm2-"
+
+#define CAR_HOME @"c233"
+#define WIFE_MODEL @"c104"
+#define Beauty_DIARY @"c110"
+
+#define FiX_PARA @"-p1-s20.json"
+
+#define UPDATE_FIX_PARA @"-s20.json"
+
+/*
+ 1.汽车之家十年参数
+ http://app.api.autohome.com.cn/autov4.9.5/club/jingxuantopic-pm2-c233-p1-s20.json
+    p1 p2 p3...为可变参数
+    论坛：
+ http://ajax.club.autohome.com.cn/detail/addtopicclicks?from=app&func=setReplyValue&topicid=45743591
+ 2.媳妇当车模参数
+ http://app.api.autohome.com.cn/autov4.9.5/club/jingxuantopic-pm2-c104-p1-s20.json
+    p1 p2 p3...为可变参数
+    论坛：
+    http://ajax.club.autohome.com.cn/detail/addtopicclicks?from=app&func=setReplyValue&topicid=46041895
+    topicid=46041895 为可变参数
+ 3.美人“记”参数
+ http://app.api.autohome.com.cn/autov4.9.5/club/jingxuantopic-pm2-c110-p1-s20.json
+    p1 p2 p3...为可变参数
+    美人记里的论坛
+ http://ajax.club.autohome.com.cn/detail/addtopicclicks?from=app&func=setReplyValue&topicid=42832082
+    topicid=42832082为可变参数
+*/
+
+/*
+ 找车参数
+ http://app.api.autohome.com.cn/autov4.9.5/cars/searchcars-pm2-mip0-map0-l-c-b-st-dsc-conf-o2-p1-s20-bid-f-driv-numseats.json
+ */
+
+#endif

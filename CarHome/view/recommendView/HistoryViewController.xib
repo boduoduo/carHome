@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryViewController">
+            <connections>
+                <outlet property="leftBtn" destination="nDN-EZ-FXe" id="eac-WG-bte"/>
+                <outlet property="myTableView" destination="Y6G-Yw-Awv" id="PZr-fu-NdL"/>
+                <outlet property="right1Btn" destination="peH-gR-LzG" id="027-sE-mVA"/>
+                <outlet property="right2Btn" destination="cfQ-Cb-fcw" id="u6l-hM-T9A"/>
+                <outlet property="topView" destination="uep-hZ-PBS" id="UFj-Wj-ImY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uep-hZ-PBS">
+                    <rect key="frame" x="0.0" y="20" width="600" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDN-EZ-FXe">
+                            <rect key="frame" x="10" y="10" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="OW9-vr-03i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="返回" image="bar_btn_icon_returntext_a">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Clicked:" destination="-1" eventType="touchUpInside" id="cVX-CR-Orw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peH-gR-LzG">
+                            <rect key="frame" x="550" y="10" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="BTr-qh-eFg"/>
+                            </constraints>
+                            <state key="normal" title="选择">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="right1Click:" destination="-1" eventType="touchUpInside" id="5AA-PX-K0M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Cb-fcw">
+                            <rect key="frame" x="490" y="10" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="b6S-72-DFx"/>
+                            </constraints>
+                            <state key="normal" title="删除">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="right2Click:" destination="-1" eventType="touchUpInside" id="lOb-Hx-8VO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0Yt-zr-65n"/>
+                        <constraint firstItem="nDN-EZ-FXe" firstAttribute="leading" secondItem="uep-hZ-PBS" secondAttribute="leading" constant="10" id="6Nf-A6-VZP"/>
+                        <constraint firstItem="peH-gR-LzG" firstAttribute="top" secondItem="uep-hZ-PBS" secondAttribute="top" constant="10" id="9Ro-1h-GjY"/>
+                        <constraint firstAttribute="bottom" secondItem="nDN-EZ-FXe" secondAttribute="bottom" constant="10" id="Abi-uF-Mq5"/>
+                        <constraint firstAttribute="bottom" secondItem="cfQ-Cb-fcw" secondAttribute="bottom" constant="10" id="Qfo-x4-LQs"/>
+                        <constraint firstItem="cfQ-Cb-fcw" firstAttribute="top" secondItem="uep-hZ-PBS" secondAttribute="top" constant="10" id="din-pt-Jm6"/>
+                        <constraint firstAttribute="bottom" secondItem="peH-gR-LzG" secondAttribute="bottom" constant="10" id="gct-fS-52O"/>
+                        <constraint firstItem="nDN-EZ-FXe" firstAttribute="top" secondItem="uep-hZ-PBS" secondAttribute="top" constant="10" id="pzw-mq-XKE"/>
+                        <constraint firstAttribute="trailing" secondItem="peH-gR-LzG" secondAttribute="trailing" constant="10" id="r6v-iY-Vxn"/>
+                        <constraint firstItem="cfQ-Cb-fcw" firstAttribute="trailing" secondItem="peH-gR-LzG" secondAttribute="leading" constant="-20" id="rRC-XE-wHU"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y6G-Yw-Awv">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uep-hZ-PBS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0nA-vD-dbP"/>
+                <constraint firstAttribute="trailing" secondItem="uep-hZ-PBS" secondAttribute="trailing" id="BMj-jY-7vD"/>
+                <constraint firstItem="Y6G-Yw-Awv" firstAttribute="top" secondItem="uep-hZ-PBS" secondAttribute="bottom" id="EOf-yX-Gy6"/>
+                <constraint firstItem="Y6G-Yw-Awv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ib7-WY-iJe"/>
+                <constraint firstAttribute="bottom" secondItem="Y6G-Yw-Awv" secondAttribute="bottom" id="ZWX-Db-wOT"/>
+                <constraint firstAttribute="trailing" secondItem="Y6G-Yw-Awv" secondAttribute="trailing" id="fjC-NH-7fo"/>
+                <constraint firstItem="uep-hZ-PBS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="sIQ-Y9-9Dv"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bar_btn_icon_returntext_a" width="11" height="20"/>
+    </resources>
+</document>

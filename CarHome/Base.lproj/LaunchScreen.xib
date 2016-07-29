@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startPic" translatesAutoresizingMaskIntoConstraints="NO" id="jI1-B9-aRP">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jI1-B9-aRP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AuQ-s2-siL"/>
+                <constraint firstAttribute="trailing" secondItem="jI1-B9-aRP" secondAttribute="trailing" id="hEG-22-22q"/>
+                <constraint firstItem="jI1-B9-aRP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rHm-iR-UpT"/>
+                <constraint firstAttribute="bottom" secondItem="jI1-B9-aRP" secondAttribute="bottom" id="zrv-2i-xEB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="554" y="448"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="startPic" width="1242" height="2208"/>
+    </resources>
+</document>

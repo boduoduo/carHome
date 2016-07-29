@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UsualDiscussTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2r-Bf-YRZ">
+                        <rect key="frame" x="70" y="5" width="305" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5bb-XF-QCt"/>
+                            <constraint firstAttribute="width" constant="80" id="7t8-Yk-vVR"/>
+                            <constraint firstAttribute="height" constant="20" id="FPv-HG-wYJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7t8-Yk-vVR"/>
+                                <exclude reference="FPv-HG-wYJ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb6-DW-MW8">
+                        <rect key="frame" x="70" y="35" width="305" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="4t3-zZ-MFF"/>
+                            <constraint firstAttribute="height" constant="20" id="Ibu-Z9-DLc"/>
+                            <constraint firstAttribute="height" constant="20" id="xgb-ht-UFf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4t3-zZ-MFF"/>
+                                <exclude reference="xgb-ht-UFf"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXx-oM-aWg">
+                        <rect key="frame" x="15" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="2sr-lS-jkN"/>
+                            <constraint firstAttribute="width" constant="50" id="3Mh-Si-hIh"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="CLY-Ra-0zP"/>
+                            <constraint firstAttribute="height" constant="50" id="GT5-mD-S90"/>
+                            <constraint firstAttribute="height" constant="50" id="Tcy-yd-sSN"/>
+                            <constraint firstAttribute="width" constant="50" id="Xds-Ue-i6g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2sr-lS-jkN"/>
+                                <exclude reference="CLY-Ra-0zP"/>
+                                <exclude reference="GT5-mD-S90"/>
+                                <exclude reference="Xds-Ue-i6g"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-X5-5TV" userLabel="BottomLineView">
+                        <rect key="frame" x="0.0" y="58.5" width="375" height="0.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="jUa-1v-vMi"/>
+                            <constraint firstAttribute="height" constant="1" id="m1P-pP-g9a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jUa-1v-vMi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y2r-Bf-YRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3iI-BR-Lx6"/>
+                    <constraint firstItem="uXx-oM-aWg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="57y-yb-gdj"/>
+                    <constraint firstItem="YhX-X5-5TV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A2I-yV-Ekz"/>
+                    <constraint firstItem="YhX-X5-5TV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CPp-G3-e9D"/>
+                    <constraint firstItem="y2r-Bf-YRZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="DQs-bh-acx"/>
+                    <constraint firstAttribute="trailing" secondItem="y2r-Bf-YRZ" secondAttribute="trailing" id="E3C-N2-Aby"/>
+                    <constraint firstAttribute="trailing" secondItem="qb6-DW-MW8" secondAttribute="trailing" id="ORN-MW-SmK"/>
+                    <constraint firstAttribute="trailing" secondItem="YhX-X5-5TV" secondAttribute="trailing" id="Qth-9l-aps"/>
+                    <constraint firstItem="y2r-Bf-YRZ" firstAttribute="leading" secondItem="uXx-oM-aWg" secondAttribute="trailing" constant="5" id="R2A-Lx-xez"/>
+                    <constraint firstItem="uXx-oM-aWg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="UtY-0O-w9N"/>
+                    <constraint firstItem="qb6-DW-MW8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="YfM-OJ-g0I"/>
+                    <constraint firstItem="qb6-DW-MW8" firstAttribute="leading" secondItem="uXx-oM-aWg" secondAttribute="trailing" constant="5" id="a41-gs-q8b"/>
+                    <constraint firstItem="uXx-oM-aWg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bGy-iB-S5J"/>
+                    <constraint firstAttribute="bottom" secondItem="YhX-X5-5TV" secondAttribute="bottom" id="bbi-fD-7IS"/>
+                    <constraint firstItem="uXx-oM-aWg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="eYm-qZ-fAT"/>
+                    <constraint firstItem="qb6-DW-MW8" firstAttribute="top" secondItem="YhX-X5-5TV" secondAttribute="bottom" id="fyt-wO-zqK"/>
+                    <constraint firstItem="uXx-oM-aWg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="qyC-AP-XHS"/>
+                    <constraint firstItem="qb6-DW-MW8" firstAttribute="top" secondItem="y2r-Bf-YRZ" secondAttribute="bottom" constant="10" id="tL6-DV-hPu"/>
+                    <constraint firstAttribute="trailing" secondItem="YhX-X5-5TV" secondAttribute="trailing" id="vpN-1j-ZwU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="57y-yb-gdj"/>
+                        <exclude reference="eYm-qZ-fAT"/>
+                        <exclude reference="qyC-AP-XHS"/>
+                        <exclude reference="CPp-G3-e9D"/>
+                        <exclude reference="vpN-1j-ZwU"/>
+                        <exclude reference="DQs-bh-acx"/>
+                        <exclude reference="YfM-OJ-g0I"/>
+                        <exclude reference="fyt-wO-zqK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bottomLine" destination="YhX-X5-5TV" id="eNM-sU-hNy"/>
+                <outlet property="detailLabel" destination="qb6-DW-MW8" id="ed3-3J-bv0"/>
+                <outlet property="iconImageView" destination="uXx-oM-aWg" id="Vq9-66-WgB"/>
+                <outlet property="titleLabel" destination="y2r-Bf-YRZ" id="GW0-L8-AMe"/>
+            </connections>
+            <point key="canvasLocation" x="226.5" y="216"/>
+        </tableViewCell>
+    </objects>
+</document>
